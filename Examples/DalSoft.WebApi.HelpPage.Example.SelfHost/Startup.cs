@@ -32,6 +32,9 @@ namespace DalSoft.WebApi.HelpPage.Example.SelfHost
 
             // WebApi HelpPage
             app.UseWebApiHelpPage(config, "myhelp");
+            
+            //ensures configs are initialized
+             config.EnsureInitialized();
         }
     }
 
